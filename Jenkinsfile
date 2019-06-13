@@ -63,5 +63,10 @@ pipeline {
         }
       }
     }
+    stage('End') {
+      steps {
+        echo 'Completed'
+      }
+    }
   }
 }
