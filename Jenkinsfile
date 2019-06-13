@@ -8,12 +8,6 @@ pipeline {
             echo 'Integration of latest code'
           }
         }
-        stage('Verifying the push') {
-          steps {
-            echo 'Push is verified'
-           // mail(subject: 'Integration', body: 'Integration', cc: 'aditya.madhira@synaptics.com', from: 'aditya.madhira@synaptics.com', replyTo: ' ', to: 'kmurray@cloudbees.com')
-          }
-        }
       }
     }
     stage('Generate release package') {
